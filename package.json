@@ -1,0 +1,27 @@
+{
+  "name": "react-skeleton",
+  "version": "0.0.1",
+  "description": "Boostraping react",
+  "main": "app.html",
+  "dependencies": {
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.0",
+    "chai": "^1.9.1",
+    "livereload": "^0.3.5",
+    "mocha": "^1.21.4",
+    "reactify": "^0.17.0",
+    "sinon": "^1.10.3",
+    "watchify": "^1.0.2"
+  },
+  "scripts": {
+    "watch-js": "watchify -t reactify src/js/*.js -d -o public/js/app.js",
+    "watch-reload": "livereload -p public/ & npm run watch-js",
+    "build-js": "browserify -t reactify src/js/*.js > public/js/app.js",
+    "build": "npm run build-css && npm run build-js",
+    "test": "mocha -R spec -u bdd"
+  },
+  "author": "Xebia",
+  "license": "MIT"
+}
