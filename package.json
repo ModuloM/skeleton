@@ -16,9 +16,9 @@
     "watchify": "^1.0.2"
   },
   "scripts": {
-    "watch-js": "watchify -t reactify src/js/*.js -d -o public/js/app.js",
-    "watch-reload": "livereload -p public/ & npm run watch-js",
-    "build-js": "browserify -t reactify src/js/*.js > public/js/app.js",
+    "watch-js": "watchify -t reactify public/scripts/*.js -d -o build/app.js",
+    "watch-reload": "livereload -p build/ & npm run watch-js",
+    "build-js": "browserify -t reactify public/scripts/*.js > build/app.js",
     "build": "npm run build-css && npm run build-js",
     "test": "mocha -R spec -u bdd"
   },
