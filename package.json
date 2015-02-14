@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "browserify": "^8.1.0",
+    "catw": "^0.2.0",
     "chai": "^1.9.1",
     "livereload": "^0.3.5",
     "mocha": "^1.21.4",
@@ -16,10 +17,12 @@
     "watchify": "^1.0.2"
   },
   "scripts": {
-    "watch-js": "watchify -t reactify public/scripts/*.js -d -o build/app.js",
-    "watch-reload": "livereload -p build/ & npm run watch-js",
-    "build-js": "browserify -t reactify public/scripts/*.js > build/app.js",
-    "build": "npm run build-css && npm run build-js",
+    "watch-css": "catw -c 'sassc ' 'src/styles/*.scss' -o public/styles/app.css -v",
+    "watch-js": "watchify -t reactify src/scripts/**/*.jsx -d -o public/scripts/app.js",
+    "watch": "livereload public/ & npm run watch-js & npm run watch-css",
+    "build-css": "catw -c 'sassc ' 'src/styles/*.scss' > public/styles/app.css",
+    "build-js": "browserify -t reactify src/scripts/**/*.jsx > public/scripts/app.js",
+    "build": "npm run build-css && npm run build-js && npm run build-css",
     "test": "mocha -R spec -u bdd"
   },
   "author": "Xebia",

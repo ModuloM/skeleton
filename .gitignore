@@ -1,27 +1,32 @@
+*/.DS_Store
 .DS_Store
-.nodemonignore
-.sass-cache/
-npm-debug.log
-node_modules/
-
-public/dist
-public/lib/**/demos/
-public/lib/**/docs/
-public/lib/**/*.json
-public/lib/**/*.md
-public/lib/**/src
-public/lib/**/*.txt
-public/lib/**/*.html
-public/lib/**/tests
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
 
 app/tests/coverage/
 .bower-*/
-.idea/
 *.iml
 
 # Logs
 logs
 *.log
+.nodemonignore
+.project
+.settings
+.classpath
+.sass-cache/
+report/
+sitespeed-result/
+infra/gatling/build/
+infra/gatling/reports/
+infra/gatling/.gradle/
+tools/PhantomCSS/screenshots
+tools/PhantomCSS/failures
 
 # Runtime data
 pids
@@ -45,25 +50,6 @@ build/Release
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
 node_modules
 
-
-*/.DS_Store
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
-
-__MACOSX
-.DS_Store
-
-.project
-.settings
-.classpath
-.sass-cache/
-
 *.7z
 *.dmg
 *.gz
@@ -72,24 +58,11 @@ __MACOSX
 *.tar
 *.zip
 
-# Idea
+# Ide & projects settings
 .iml
 .idea
 .sublime-workspace
 .sublime-project
 
-report/
-sitespeed-result/
-infra/gatling/build/
-infra/gatling/reports/
-infra/gatling/.gradle/
+public/**/*
 
-public/modules/**/css/*.css
-public/modules/**/ie8/*.css
-public/modules/**/css/*.css.map
-public/modules/**/ie8/*.css.map
-public/lib/jquery-ui/themes
-public/lib/jquery-ui/ui/i18n
-
-tools/PhantomCSS/screenshots
-tools/PhantomCSS/failures
