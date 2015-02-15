@@ -1,7 +1,6 @@
-$blou: 20px;
+$height: 1em;
 
-.bla {
-  $test: #ff1234;
-  color: $test;
-  height: $blou;
+.app {
+  color: #ff1234;
+  height: $height;
 }

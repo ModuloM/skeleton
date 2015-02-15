@@ -64,5 +64,6 @@ node_modules
 .sublime-workspace
 .sublime-project
 
-public/**/*
+public/scripts/**
+public/styles/**
 
