@@ -5,7 +5,7 @@ For html / sass / react project
 ## Advantages & flaws 
 
 \+ Simple to use, no extra tools  
-\- Watcher may crash so you have to kill the terminal crashed job
+\- Watcher may crash so you have to kill the terminal crashed job. No sourcemap. No linting. No uglify.
 
 ## Prequirement
 
@@ -21,9 +21,7 @@ and
 
 sass (for OS X)
     
-    gem install sass
-
-see [http://sass-lang.com/install](http://sass-lang.com/install)
+    brew install sassc
 
 
 ## Build with simple npm
