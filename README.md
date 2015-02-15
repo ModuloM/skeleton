@@ -29,8 +29,6 @@ see [http://sass-lang.com/install](http://sass-lang.com/install)
 ## Build with simple npm
 
 * browserify
-* lint
-* uglify
 * mocha for testing
 * livereload
 
