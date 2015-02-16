@@ -21,7 +21,7 @@
     "watch-js": "watchify -t reactify src/scripts/**/*.jsx -d -o public/scripts/app.js",
     "watch": "livereload public/ & npm run watch-js & npm run watch-css",
     "build-css": "catw -c 'sassc ' 'src/styles/*.scss' > public/styles/app.css",
-    "build-js": "browserify -t reactify src/scripts/**/*.jsx > public/scripts/app.js",
+    "build-js": "browserify -t reactify src/**/*.jsx > public/scripts/app.js",
     "build": "npm run build-css && npm run build-js && npm run build-css",
     "test": "mocha -R spec -u bdd"
   },
