@@ -5,7 +5,7 @@ For html / sass / react project
 ## Advantages & flaws 
 
 \+ Simple to use, no extra tools  
-\- Watcher may crash so you have to kill the terminal crashed job. No sourcemap. No linting. No uglify.
+\- Watcher may crash so you have to kill the terminal crashed job & restart npm job. No sourcemap. No linting.
 
 ## Prequirement
 
@@ -27,6 +27,7 @@ sass (for OS X)
 ## Build with simple npm
 
 * browserify
+* uglify
 * mocha for testing
 * livereload
 

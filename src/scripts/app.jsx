@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react'),
-    Module = require('./modules/Module.jsx');
+    Module = require('./components/Module.jsx');
 
 React.render(
     <Module />,
